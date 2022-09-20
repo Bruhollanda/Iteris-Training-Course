@@ -1,0 +1,5 @@
+.data .personal-data label {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
