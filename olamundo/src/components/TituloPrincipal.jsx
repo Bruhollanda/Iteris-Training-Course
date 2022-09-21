@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function TituloPrincipal({ tituloProps }) {
+export default function TituloPrincipal({ propsTitle }) {
+  const [getTitle, setTitle] = useState(propsTitle ?? "Olá mundo");
   
-  const titulo = tituloProps ?? "Olá, mundo!";
-  
-  const clickCallBack = (event) => {
+  const handleClick = (event) => {
     alert("Thanks for clicking!");
-  }
+  };
 
-  return <h1 onClick={ clickCallBack }>{titulo}</h1>; 
+  const handleChangeTitle = (event) => {
+    setTitle(event.target.value);
+  };
+
+  return (
+    <>
+      <h1 onClick={ handleClick }>{ getTitle }</h1>
+      <input
+        type="text"
+        name="text"
+        onChange={ handleChangeTitle }
+      />
+    </>
+  );
 }

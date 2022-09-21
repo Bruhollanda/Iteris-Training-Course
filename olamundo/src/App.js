@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <TituloPrincipal tituloProps = "Click me!" />
+      <TituloPrincipal propsTitle = "Click me!" />
     </div>
   );
 }
