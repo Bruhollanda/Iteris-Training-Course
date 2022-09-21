@@ -1,7 +1,8 @@
 import React from 'react';
 
-export default function TituloPrincipal() {
-  const titulo = "Olá, mundo!";
+export default function TituloPrincipal({ tituloProps }) {
+  
+  const titulo = tituloProps ?? "Olá, mundo!";
 
   return <h1>{titulo}</h1>; 
 }

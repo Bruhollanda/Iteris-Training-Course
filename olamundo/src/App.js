@@ -6,8 +6,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <TituloPrincipal />
-      <OutroTitulo />
+      <TituloPrincipal tituloProps = "titulo 1" />
+      <OutroTitulo tituloProps = "titulo 2" />
     </div>
   );
 }
