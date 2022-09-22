@@ -1,6 +1,6 @@
 import TarefaModel from '../models/TarefaModel';
 
-function ListaTarefasContextBuilder([
+export default function ListaTarefasContextBuilder([
   getListaDeTarefas,
   setListaDeTarefas,
 ]) {
