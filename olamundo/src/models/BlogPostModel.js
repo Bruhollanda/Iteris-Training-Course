@@ -3,5 +3,6 @@ export default class BlogPostModel {
     this.title = title;
     this.image = image;
     this.text = text;
+    this.showImage = true;
   }
 }
