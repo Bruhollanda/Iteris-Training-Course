@@ -10,7 +10,7 @@ export default function BlogPost({ post }) {
     setCounter(getCounter + 1);
   };
 
-  const handleCheckImage = () => {
+  const handleCheckImage = (event) => {
     const toggleImage = !post.showImage;
     console.log(toggleImage);
     setPost({ ...post, showImage: toggleImage });
